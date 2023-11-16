@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">TravelMate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="who_is_going">Who is going?</string>
+    <string name="who_is_going_desc">Let\'s get started by selecting who you\'re traveling with.</string>
+    <string name="Continue">Continue</string>
+    <string name="only_me">Only Me</string>
+    <string name="only_me_desc">Traveling solo, just you.</string>
+    <string name="couple">A Couple</string>
+    <string name="family">Family</string>
+    <string name="couple_desc">A romantic getaway for two.</string>
+    <string name="family_desc">Quality time with your loved ones.</string>
+    <string name="friends">Friends</string>
+    <string name="friends_desc">Adventure with your closest pals.</string>
+    <string name="work">Work</string>
+    <string name="work_desc">Business or corporate travel.</string>
+    <string name="set_budget">Set your trip budget</string>
+    <string name="set_budget_desc">Let us know your budget preference, and we\'ll craft an itinerary that suits your financial comfort</string>
+    <string name="cheap">Cheap</string>
+    <string name="balanced">Balanced</string>
+    <string name="luxury">Luxury</string>
+    <string name="flexible">Flexible</string>
+    <string name="flexible_desc">No budget restrictions.</string>
+    <string name="luxury_desc">High-end, indulgent experiences.</string>
+    <string name="cheap_desc">Budget-friendly,economical travel.</string>
+    <string name="balanced_desc">Moderate spending for a balanced trip.</string>
+
 </resources>
+

@@ -24,6 +24,7 @@
             android:layout_height="75dp"
             android:layout_gravity="bottom"
             android:defaultFocusHighlightEnabled="true"
+            android:background="@color/card"
             app:itemIconSize="32sp"
             app:labelVisibilityMode="labeled"
             app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"

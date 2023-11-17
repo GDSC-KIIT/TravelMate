@@ -36,11 +36,14 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:fontFamily="@font/poppins_bold"
         android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="Travel Preferences"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="139dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -49,9 +52,10 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Personal info"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="139dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView4"
@@ -60,8 +64,10 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Account & Security"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:layout_editor_absoluteX="81dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView5"
@@ -70,8 +76,10 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Billing & Subscription"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:layout_editor_absoluteX="80dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView6"
@@ -80,8 +88,10 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Payment Methods"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:layout_editor_absoluteX="80dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView7"
@@ -90,8 +100,10 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_bold"
         android:text="App Appearance"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        tools:layout_editor_absoluteX="80dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView8"
@@ -100,8 +112,10 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Data & Analytics"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        tools:layout_editor_absoluteX="80dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView9"
@@ -110,8 +124,10 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Help & Support"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:layout_editor_absoluteX="80dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView10"
@@ -119,10 +135,14 @@
         android:layout_height="22dp"
         android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_bold"
-        android:textColor="#FF0000"
         android:text="Logout"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
-        tools:layout_editor_absoluteX="80dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView11"
@@ -131,7 +151,9 @@
         android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Linked Accounts"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:layout_editor_absoluteX="80dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

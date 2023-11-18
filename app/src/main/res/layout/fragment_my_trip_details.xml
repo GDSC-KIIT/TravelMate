@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    tools:context=".My_trip_details">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/place_img"
+        android:layout_width="418dp"
+        android:layout_height="231dp"
+        android:src="@drawable/japan_tokyo"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/dropdown_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_button"
+        app:layout_constraintBottom_toBottomOf="@+id/place_img"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/place_img"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/share_button"
+        app:layout_constraintBottom_toBottomOf="@+id/place_img"
+        app:layout_constraintEnd_toStartOf="@+id/dropdown_menu"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="@+id/place_img"
+        app:layout_constraintTop_toTopOf="@+id/place_img"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/prev_window"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:src="@drawable/prev_button"
+        app:layout_constraintBottom_toBottomOf="@+id/place_img"
+        app:layout_constraintEnd_toStartOf="@+id/share_button"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="@+id/place_img"
+        app:layout_constraintTop_toTopOf="@+id/place_img"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="9sp"
+        android:paddingTop="10sp"
+        android:text="Country Name"
+        android:textColor="@color/text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/place_img"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/country_flag"
+        android:layout_width="68dp"
+        android:layout_height="56dp"
+        android:elevation="18sp"
+        android:padding="8sp"
+        android:src="@drawable/japan_flag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toEndOf="@+id/country_name"
+        app:layout_constraintTop_toBottomOf="@+id/place_img"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/trip_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_name"
+        app:layout_constraintVertical_bias="0.0"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/text_secondary"
+        /><!-- The flag will change according to country-->
+    <ImageView
+        android:id="@+id/map_img"
+        android:layout_width="263dp"
+        android:layout_height="117dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/place_img"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_corner_button"
+        android:elevation="6sp"
+        android:fontFamily="@font/poppins_light"
+        android:padding="3sp"
+        android:text="Date 1"
+        android:textColor="@color/card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_img" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_corner_button"
+        android:elevation="6sp"
+        android:fontFamily="@font/poppins_light"
+        android:padding="3sp"
+        android:text="Date 2"
+        android:textColor="@color/card"
+        app:layout_constraintStart_toEndOf="@+id/date1"
+        app:layout_constraintTop_toBottomOf="@+id/map_img" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/date3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/round_corner_button"
+        android:elevation="6sp"
+        android:fontFamily="@font/poppins_light"
+        android:padding="3sp"
+        android:text="Date 3"
+        android:textColor="@color/card"
+        app:layout_constraintStart_toEndOf="@+id/date2"
+        tools:layout_editor_absoluteY="432dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

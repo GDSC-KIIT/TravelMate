@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/heading"
         android:layout_width="140dp"
-        android:layout_height="47dp"
+        android:layout_height="45dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Settings"
         android:textAlignment="center"
@@ -37,11 +37,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="132dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Travel Preferences"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,7 +53,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="Personal info"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -65,7 +65,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="Account & Security"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.299"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -77,7 +77,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="Billing & Subscription"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintHorizontal_bias="0.329"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -89,7 +89,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="Payment Methods"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -101,7 +101,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="App Appearance"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -113,7 +113,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="Data & Analytics"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -125,7 +125,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="Help & Support"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.299"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -139,7 +139,7 @@
         android:textColor="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.299"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         app:layout_constraintVertical_bias="0.0" />
@@ -152,8 +152,89 @@
         android:fontFamily="@font/poppins_bold"
         android:text="Linked Accounts"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        android:
+        app:srcCompat="@drawable/travelpreference"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/personalinfo"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/accountandsecurity"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/billing"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="285dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/paymentmethods"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/linkedaccounts"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/apptheme"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="437dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/dataandanalytics"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="487dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/helpandsupport"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="537dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/logout"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="582dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -94,7 +94,7 @@
             android:id="@+id/textView4"
             android:layout_width="300dp"
             android:layout_height="34dp"
-            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_bold"
             android:text="@string/couple"
@@ -119,7 +119,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:layout_constraintVertical_bias="0.0" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

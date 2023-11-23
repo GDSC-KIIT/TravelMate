@@ -24,6 +24,11 @@
     <string name="luxury_desc">High-end, indulgent experiences.</string>
     <string name="cheap_desc">Budget-friendly,economical travel.</string>
     <string name="balanced_desc">Moderate spending for a balanced trip.</string>
+    <string name="adventure_desc">Select your travel preference  to customize your trip plan.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="adventureTaste">Tailor your adventure to your tastes </string>
+    <string name="startAndEndTrip">When will your adventure begin and end</string>
+    <string name="startEndDesc">Choose the dates for your trip. This helps us plan the perfect itinerary for your travel period.  </string>
 
 </resources>
 

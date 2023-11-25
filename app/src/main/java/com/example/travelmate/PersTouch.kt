@@ -9,5 +9,4 @@ import android.view.ViewGroup
 
 class PersTouch : Fragment(R.layout.fragment_pers_touch) {
 
-
 }

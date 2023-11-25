@@ -55,16 +55,144 @@
 
     <com.google.android.material.chip.ChipGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/searchView"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
 
-    <com.google.android.material.chip.Chip
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hey"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="228dp" />
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adventure Travel 🏞️"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City Breaks 🌇"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cultural Exploration 🏛️"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glamping ⛺"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beach Vacations 🏖️"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nature Escapes 🌿"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relaxing Getaways 🏨"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Road Trips 🚗"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Tourism 🍔"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backpacking 🎒"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cruise Vacations 🚢"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staycations 🏡"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skiing/Snowboarding 🏂"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wine Tours 🍷"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wildlife Safaris 🦁"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Art Galleries 🎨"
+            app:rippleColor="@color/primary"
+            android:checkable="true"
+            android:textSize="19dp"/>
+
+
+    </com.google.android.material.chip.ChipGroup>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

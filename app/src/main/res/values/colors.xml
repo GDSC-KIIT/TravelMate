@@ -9,4 +9,6 @@
     <color name="text_tertiary">#BDBDBD</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="Transparent">#00CCCCCC</color>
+
 </resources>

@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         val initialFragment: Fragment = home_main_fragment()
         replaceFragment(initialFragment)
 
+        
+
     }
 
     private fun replaceFragment(fragment: Fragment) {

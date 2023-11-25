@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="roundedimageview" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20sp</item>
+        <item name="color">@color/white</item>
+    </style>
+    <style name="roundedimageview2" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20sp</item>
+        <item name="color">@color/black</item>
+    </style>
+
+</resources>

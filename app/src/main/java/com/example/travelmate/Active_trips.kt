@@ -5,21 +5,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.example.recyclerview.com.example.travelmate.ActiveTrips_data
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Active_trips.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class Active_trips : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+
+    private lateinit var atrip_adapter:Atrip_adapter
+    private lateinit var newARecyclerview: RecyclerView
+    private lateinit var newActiveTripList:ArrayList<ActiveTrips_data>
+    lateinit var  destinationImg:ArrayList<Int>
+    lateinit var upcoming_des:ArrayList<String>
+    lateinit var upcoming_des_flag:ArrayList<Int>
+    lateinit var upcoming_trip_detail:ArrayList<String>
+    lateinit var activetrips: Array<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,7 +49,7 @@ class Active_trips : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Active_trips.
+         * @return A new instance of fragment My_trip_empty.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
@@ -56,4 +61,27 @@ class Active_trips : Fragment() {
                 }
             }
     }
-}
+    private fun atripinitialize(){
+        newActiveTripList= arrayListOf<ActiveTrips_data>()
+        destinationImg= arrayListOf(
+            R.drawable.japan_tokyo,
+            R.drawable.paris
+        )
+        upcoming_des= arrayListOf(
+            "Tokyo,Japan",
+            "Paris,Japan"
+        )
+        upcoming_des_flag= arrayListOf(
+            R.drawable.japan_flag,
+            R.drawable.france_flag
+        )
+        upcoming_trip_detail= arrayListOf(
+            "Dec 12 -16 Dec,2023  .  A couple  . Luxury",
+            "Dec 21 -26 Dec,2023  .  A couple  . Luxury"
+        )
+
+        for (i in destinationImg.indices){
+            val activetrips=ActiveTrips_data(destinationImg[i],upcoming_des[i],upcoming_des_flag[i], upcoming_trip_detail[i])
+            newActiveTripList.add(activetrips)
+
+        }

@@ -7,7 +7,7 @@
     tools:context=".My_trip_record">
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/trip_record"
+        android:id="@+id/tripRecord"
         android:layout_width="0dp"
         android:layout_height="50dp"
         app:tabMode="fixed"
@@ -22,13 +22,13 @@
         app:layout_constraintTop_toTopOf="parent"
         />
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/trip_recordPager"
+        android:id="@+id/tripRecordPager"
         android:layout_width="0sp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/trip_record"/>
+        app:layout_constraintTop_toBottomOf="@+id/tripRecord"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Creating Itinerary..."
+                android:text="@string/creating_itinerary"
                 android:textSize="27sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"
@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Please wait while we are creating your itinerary according to your preference"
+                android:text="@string/wait_desc"
                 android:textSize="18sp"
                 android:gravity="center"
                 android:layout_marginTop="16dp" />

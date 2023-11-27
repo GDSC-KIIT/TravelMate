@@ -29,6 +29,34 @@
     <string name="adventureTaste">Tailor your adventure to your tastes </string>
     <string name="startAndEndTrip">When will your adventure begin and end</string>
     <string name="startEndDesc">Choose the dates for your trip. This helps us plan the perfect itinerary for your travel period.  </string>
+    <string name="budget">Budget</string>
+    <string name="budget_desc">Budget</string>
+    <string name="interest">interest</string>
+    <string name="Interests">Interests</string>
+    <string name="dates">Dates</string>
+    <string name="trip_dates">Trip dates</string>
+    <string name="a_couple">A couple</string>
+    <string name="party">Party</string>
+    <string name="tokyo_japan">Tokyo,Japan</string>
+    <string name="destination">Destination</string>
+    <string name="review_summary">Review Summary</string>
+    <string name="back_button">back Button</string>
+    <string name="wait_desc">Please wait while we are creating your itinerary according to your preference</string>
+    <string name="creating_itinerary">Creating Itinerary...</string>
+    <string name="adventure_travel">Adventure Travel</string>
+    <string name="city_breaks">City breaks</string>
+    <string name="cultural_exploration">Cultural Exploration</string>
+    <string name="glamping">Glamping</string>
+    <string name="beach_vacations">Beach Vacations</string>
+    <string name="nature_escapes">Nature Escapes</string>
+    <string name="relaxing_getaways">Relaxing Getaways</string>
+    <string name="road_trips">Road Trips</string>
+    <string name="food_tourism">Food Tourism</string>
+    <string name="backpacking">Backpacking</string>
+    <string name="cruise_vacations">Cruise Vacations</string>
+    <string name="staycations">Staycations</string>
+    <string name="skiing_snowboarding">Skiing/Snowboarding</string>
+    <string name="historical_sites">Historical Sites</string>
 
 </resources>
 

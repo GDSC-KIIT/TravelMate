@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomizeTripFragment">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/adventureTaste"
+        android:textColor="@color/text_primary"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/adventure_desc"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAdventure"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/adventure_travel"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCity"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/city_breaks"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnAdventure"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCultural"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/cultural_exploration"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdventure" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGlamping"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/glamping"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnCultural"
+        app:layout_constraintTop_toBottomOf="@+id/btnCity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBeach"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/beach_vacations"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCultural" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNature"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/nature_escapes"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnBeach"
+        app:layout_constraintTop_toBottomOf="@+id/btnGlamping" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRelax"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/relaxing_getaways"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBeach" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRoadTrip"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/road_trips"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnRelax"
+        app:layout_constraintTop_toBottomOf="@+id/btnNature" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFood"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/food_tourism"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRelax" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBackpacking"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/backpacking"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnFood"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoadTrip" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCruise"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/cruise_vacations"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFood" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStaycation"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/staycations"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnCruise"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackpacking" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSkiing"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/skiing_snowboarding"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCruise" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHistorical"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_btn_unselected"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/historical_sites"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/btnSkiing"
+        app:layout_constraintTop_toBottomOf="@+id/btnStaycation" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rect_round"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

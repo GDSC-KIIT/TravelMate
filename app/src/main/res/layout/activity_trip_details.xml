@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/cat_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_holder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/ll22"
+            android:layout_below="@id/image_holder"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textholder1"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <ImageView
+                android:layout_marginLeft="220dp"
+                android:src="@drawable/baseline_more_vert_24"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/cat_back"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/baseline_share_24" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="81dp"
+            android:background="@drawable/cat_back"
+            android:src="@drawable/baseline_bookmark_border_24" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="365dp"
+            android:background="@drawable/cat_back"
+            android:src="@drawable/baseline_keyboard_arrow_left_24" />
+
+        <LinearLayout
+            android:id="@+id/ll33"
+            android:layout_below="@id/ll22"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                app:shapeAppearanceOverlay="@style/roundedimageview2"
+                android:src="@drawable/japan" />
+            <TextView
+                android:id="@+id/textholder2"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:fontFamily="@font/poppins"
+                android:text="Japan"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll23"
+            android:layout_below="@id/ll33"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textholder3"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textHard"
+                android:text="Gallery"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rc11"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll34"
+            android:layout_below="@id/ll23"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textholer4"
+                android:text="Getting to Tokoyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textholder4"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll35"
+            android:layout_below="@id/ll34"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textHard2"
+                android:text="Best Time To Visit"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textholder5"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll36"
+            android:layout_below="@id/ll35"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Must See Attraction"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textholder6"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll37"
+            android:layout_below="@id/ll36"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Local Cuisine"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textholder7"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll38"
+            android:layout_below="@id/ll37"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Activities and Experinces:"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textholder8"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll39"
+            android:layout_below="@id/ll38"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Accomodation:"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textholder9"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll40"
+            android:layout_below="@id/ll39"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Transportation:"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textholder10"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll41"
+            android:layout_below="@id/ll40"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Safety and Health Tips:"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textholder11"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll42"
+            android:layout_below="@id/ll41"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Local Languages:"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textholder12"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll43"
+            android:layout_below="@id/ll42"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Currency:"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textholder13"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll44"
+            android:layout_below="@id/ll43"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Visa and Entry Requirement:"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+            <TextView
+                android:id="@+id/textholder14"
+                android:text="Tokyo,Tokyo"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

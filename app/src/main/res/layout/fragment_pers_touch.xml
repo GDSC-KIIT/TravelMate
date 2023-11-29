@@ -41,7 +41,6 @@
         android:layout_width="155dp"
         android:layout_height="134dp"
         android:scaleType="center"
-        android:src="@drawable/Pg22"
         app:layout_constraintBottom_toTopOf="@+id/tv3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

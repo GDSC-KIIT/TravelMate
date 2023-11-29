@@ -13,15 +13,6 @@
         android:theme="@style/Theme.TravelMate"
         tools:targetApi="31">
         <activity
-            android:name=".trip_details"
-            android:exported="false" />
-        <activity
-            android:name=".popular_destination"
-            android:exported="false" />
-        <activity
-            android:name=".details_activity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -30,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

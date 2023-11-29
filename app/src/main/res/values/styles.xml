@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="roundedimageview" parent="">
@@ -11,4 +12,12 @@
         <item name="color">@color/black</item>
     </style>
 
+=======
+<resources>
+
+    <style name="Widget.Theme.TravelMate.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+>>>>>>> origin/dev-mani
 </resources>

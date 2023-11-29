@@ -44,7 +44,7 @@ class Passed_trips : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment My_trip_passed.
+         * @return A new instance of fragment Passed_trips.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic

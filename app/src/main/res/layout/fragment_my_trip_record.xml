@@ -29,6 +29,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/trip_record"/>
+        app:layout_constraintTop_toBottomOf="@+id/tripRecord"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

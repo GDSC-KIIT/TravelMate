@@ -13,8 +13,8 @@ class My_trip_record:AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_my_trip_record)
-        tabLayout=findViewById(R.id.trip_record)
-        viewPager2=findViewById(R.id.trip_recordPager)
+        tabLayout=findViewById(R.id.tripRecord)
+        viewPager2=findViewById(R.id.tripRecordPager)
         adapter=MyTrip_adapter(supportFragmentManager, lifecycle)
         tabLayout.addTab(tabLayout.newTab().setText("Active"))
         tabLayout.addTab(tabLayout.newTab().setText("Passed"))

@@ -52,6 +52,7 @@
         android:layout_height="wrap_content"
         android:padding="20sp"
         android:background="@drawable/round_corner_button"
+        android:backgroundTint="@color/primary"
         android:fontFamily="@font/poppins_semibold"
         android:text="Search Trip"
         android:textColor="@color/white"

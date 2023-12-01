@@ -84,4 +84,4 @@ class Active_trips : Fragment() {
             val activetrips=ActiveTrips_data(destinationImg[i],upcoming_des[i],upcoming_des_flag[i], upcoming_trip_detail[i])
             newActiveTripList.add(activetrips)
 
-        }
+        }}}

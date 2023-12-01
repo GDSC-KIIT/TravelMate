@@ -67,6 +67,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"/>
             <TextView
+                android:id="@+id/tvViewAllPopularDestination"
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="65dp"
                 android:layout_height="wrap_content"
@@ -103,6 +104,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"/>
             <TextView
+                android:id="@+id/tvViewAllArticles"
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="65dp"
                 android:layout_height="wrap_content"

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6sp">
+
+    <TextView
+        android:id="@+id/day1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Day2:December 13rd"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/drag_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/drag_indicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day1" />
+
+    <ImageView
+        android:id="@+id/drop_img"
+        android:layout_width="128dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="216dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/meiji_jingu"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <TextView
+        android:id="@+id/drop_name"
+        android:layout_width="155sp"
+        android:layout_height="34sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Meiji Jingu"
+        android:textColor="@color/text_primary"
+        android:textAlignment="textStart"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/drop_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/drop_name_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Shinto Shrine"
+        android:textColor="@color/text_tertiary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/drop_img"
+        app:layout_constraintTop_toBottomOf="@+id/drop_name" />
+
+    <ImageButton
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/delete_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/drag_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/drag_indicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drag_btn" />
+
+    <ImageView
+        android:id="@+id/drop_img1"
+        android:layout_width="128dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tempura_konda"
+        app:layout_constraintStart_toEndOf="@+id/drag_btn1"
+        app:layout_constraintTop_toBottomOf="@+id/drop_img" />
+
+    <TextView
+        android:id="@+id/drop_name1"
+        android:layout_width="155dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Tempura Konda"
+        android:textAlignment="textStart"
+        android:textColor="@color/text_primary"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/drop_img1"
+        app:layout_constraintTop_toBottomOf="@+id/drop_name" />
+
+    <TextView
+        android:id="@+id/drop_name_de1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Tempura Restaurant"
+        android:textColor="@color/text_tertiary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/drop_img1"
+        app:layout_constraintTop_toBottomOf="@+id/drop_name1" />
+
+    <ImageButton
+        android:id="@+id/delete_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/delete_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/drop_name1"
+        app:layout_constraintTop_toBottomOf="@+id/delete_btn" />
+    <ImageButton
+        android:id="@+id/drag_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/drag_indicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drag_btn1" />
+
+    <ImageView
+        android:id="@+id/drop_img2"
+        android:layout_width="128dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/team_lab"
+        app:layout_constraintStart_toEndOf="@+id/drag_btn2"
+        app:layout_constraintTop_toBottomOf="@+id/drop_img1" />
+
+    <TextView
+        android:id="@+id/drop_name2"
+        android:layout_width="160sp"
+        android:layout_height="34sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="TeamLab ...."
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/drop_img2"
+        app:layout_constraintTop_toBottomOf="@+id/drop_name1" />
+
+    <TextView
+        android:id="@+id/drop_name_de2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Museum"
+        android:textColor="@color/text_tertiary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/drop_img2"
+        app:layout_constraintTop_toBottomOf="@+id/drop_name2" />
+
+    <ImageButton
+        android:id="@+id/delete_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/delete_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/drop_name2"
+        app:layout_constraintTop_toBottomOf="@+id/delete_btn1" />
+    <ImageButton
+        android:id="@+id/drag_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/drag_indicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drag_btn2" />
+
+    <ImageView
+        android:id="@+id/drop_img3"
+        android:layout_width="128dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imperial_palace"
+        app:layout_constraintStart_toEndOf="@+id/drag_btn3"
+        app:layout_constraintTop_toBottomOf="@+id/drop_img2" />
+
+    <TextView
+        android:id="@+id/drop_name3"
+        android:layout_width="160sp"
+        android:layout_height="34sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Imperial Palace"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/drop_img3"
+        app:layout_constraintTop_toBottomOf="@+id/drop_name2" />
+
+    <TextView
+        android:id="@+id/drop_name_de3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Castle"
+        android:textColor="@color/text_tertiary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/drop_img3"
+        app:layout_constraintTop_toBottomOf="@+id/drop_name3" />
+
+    <ImageButton
+        android:id="@+id/delete_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/delete_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/drop_name3"
+        app:layout_constraintTop_toBottomOf="@+id/delete_btn2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addEvent_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_button"
+        android:backgroundTint="#bbeeee"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="20sp"
+        android:paddingTop="10sp"
+        android:paddingRight="20sp"
+        android:paddingBottom="10sp"
+        android:text="Add More Events"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="518dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_editI3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addEvent_btn"
+        tools:listitem="@layout/edit_d3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

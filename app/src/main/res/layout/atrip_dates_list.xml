@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:scrollbars="horizontal"
+        android:background="@drawable/round_corner_button"
+        android:backgroundTint="@color/primary"
+        android:elevation="6sp"
+        android:fontFamily="@font/poppins_light"
+        android:padding="3sp"
+        android:text="December 12"
+        android:textColor="@color/card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_corner_button"
+        android:backgroundTint="@color/primary"
+        android:elevation="6sp"
+        android:fontFamily="@font/poppins_light"
+        android:padding="3sp"
+        android:text="December 13"
+        android:textColor="@color/card"
+        app:layout_constraintStart_toEndOf="@+id/dates"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/date3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_corner_button"
+        android:backgroundTint="@color/primary"
+        android:elevation="6sp"
+        android:fontFamily="@font/poppins_light"
+        android:padding="3sp"
+        android:text="December 14"
+        android:textColor="@color/card"
+        app:layout_constraintStart_toEndOf="@+id/date2"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/daily_trip_details"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

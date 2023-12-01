@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".date_wise_detail">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/des_drop"
+        android:layout_width="32dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fork"
+        app:layout_constraintEnd_toStartOf="@+id/drop_img"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/drop_img"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cafe_tokyo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/des_drop"
+        app:layout_constraintTop_toTopOf="@+id/des_drop" />
+
+    <TextView
+        android:id="@+id/drop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Cafe de l'ambre"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <RatingBar
+        android:id="@+id/place_rating"
+        android:layout_width="231dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="#d4af37"
+        android:rating="4.21"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:stepSize="0.1"
+        app:layout_constraintTop_toTopOf="@+id/drop_name"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/clk"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/clock"
+        app:layout_constraintStart_toStartOf="@+id/drop_name"
+        app:layout_constraintTop_toTopOf="@+id/place_rating" />
+
+    <TextView
+        android:id="@+id/timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="08:00-09:00AM"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/clk"
+        app:layout_constraintTop_toBottomOf="@+id/place_rating" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/money"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/dollar"
+        app:layout_constraintStart_toStartOf="@+id/clk"
+        app:layout_constraintTop_toBottomOf="@+id/clk" />
+
+    <TextView
+        android:id="@+id/budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="$30.00"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/money"
+        app:layout_constraintStart_toStartOf="@+id/timing"
+        app:layout_constraintTop_toBottomOf="@+id/timing"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/navides"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/location_on"
+        app:layout_constraintStart_toStartOf="@+id/money"
+        app:layout_constraintTop_toBottomOf="@+id/money" />
+
+    <TextView
+        android:id="@+id/gmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="View on Google Maps"
+        android:textColor="@color/primary"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/navides"
+        app:layout_constraintStart_toStartOf="@+id/budget"
+        app:layout_constraintTop_toBottomOf="@+id/budget"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <ImageView
+        android:id="@+id/navigator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/navigation"
+        app:layout_constraintEnd_toEndOf="@+id/des_drop"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/des_drop"
+        app:layout_constraintTop_toBottomOf="@+id/des_drop" />
+
+    <ImageButton
+        android:id="@+id/carButton"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/directions_car"
+        app:layout_constraintEnd_toEndOf="@+id/cartime"
+        app:layout_constraintStart_toEndOf="@+id/navigator2"
+        app:layout_constraintTop_toBottomOf="@+id/navides" />
+
+    <TextView
+        android:id="@+id/cartime"
+        android:layout_width="33dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="10min"
+        android:textAlignment="center"
+        android:textColor="@color/text_secondary"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/carButton"
+        tools:layout_editor_absoluteX="96dp" />
+
+    <ImageButton
+        android:id="@+id/trainButton"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/train"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/carButton"
+        tools:layout_editor_absoluteY="350dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/trainTime"
+        android:layout_width="33dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="23min"
+        android:textAlignment="center"
+        android:textColor="@color/text_secondary"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/cartime"
+        app:layout_constraintTop_toBottomOf="@+id/trainButton" />
+
+    <ImageButton
+        android:id="@+id/walkButton"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/directions_walk"
+        app:layout_constraintStart_toEndOf="@+id/trainButton"
+        tools:layout_editor_absoluteY="350dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/walkTime"
+        android:layout_width="33dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="22min"
+        android:textAlignment="center"
+        android:textColor="@color/text_secondary"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/trainTime"
+        app:layout_constraintTop_toBottomOf="@+id/walkButton" />
+    <ImageButton
+        android:id="@+id/bikeButton"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/outline_directions_bike_24"
+        app:layout_constraintStart_toEndOf="@+id/walkButton"
+        tools:layout_editor_absoluteY="350dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/bikeTime"
+        android:layout_width="33dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="13min"
+        android:textAlignment="center"
+        android:textColor="@color/text_secondary"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/trainTime"
+        app:layout_constraintTop_toBottomOf="@+id/bikeButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/des_drop2"
+        android:layout_width="32dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/location_on"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigator2" />
+
+    <ImageView
+        android:id="@+id/drop_img2"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="388dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tokyo_tower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/des_drop"
+        app:layout_constraintTop_toTopOf="@+id/des_drop" />
+
+    <TextView
+        android:id="@+id/drop_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Tokyo Tower"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="563dp"
+        tools:ignore="MissingConstraints" />
+
+    <RatingBar
+        android:id="@+id/place_rating2"
+        android:layout_width="231dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="#d4af37"
+        android:rating="4.21"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:stepSize="0.1"
+        app:layout_constraintTop_toTopOf="@+id/drop_name2"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/clk2"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/clock"
+        app:layout_constraintStart_toStartOf="@+id/drop_name2"
+        app:layout_constraintTop_toTopOf="@+id/place_rating2" />
+
+    <TextView
+        android:id="@+id/timing2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="09:00-10:00AM"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/clk2"
+        app:layout_constraintTop_toBottomOf="@+id/place_rating2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/money2"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/dollar"
+        app:layout_constraintStart_toStartOf="@+id/clk2"
+        app:layout_constraintTop_toBottomOf="@+id/clk2" />
+
+    <TextView
+        android:id="@+id/budget2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="$30.00"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/money2"
+        app:layout_constraintStart_toStartOf="@+id/timing2"
+        app:layout_constraintTop_toBottomOf="@+id/timing2"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

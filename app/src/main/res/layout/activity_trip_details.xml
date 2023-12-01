@@ -2,7 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
     android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
     <RelativeLayout
         android:background="@drawable/cat_back"
         android:layout_width="match_parent"
@@ -385,9 +390,23 @@
                 android:layout_height="30sp"/>
         </LinearLayout>
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rect_round"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/Continue"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white" />
+
+
+
 
 
     </RelativeLayout>
+    </ScrollView>
 
 
 </RelativeLayout>

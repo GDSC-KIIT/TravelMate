@@ -59,6 +59,19 @@ public class home_main_fragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController= Navigation.findNavController(view);
+        view.findViewById(R.id.tvViewAllPopularDestination).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_home_main_fragment_to_popular_destination);
+            }
+        });
+
+//        view.findViewById(R.id.tvViewAllArticles).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                navController.navigate(R.id.);  // add id after making popular articles fragment
+//            }
+//        });
 
     }
 

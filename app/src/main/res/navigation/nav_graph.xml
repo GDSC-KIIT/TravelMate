@@ -19,4 +19,14 @@
         android:name="com.example.travelmate.popular_destination"
         android:label="activity_popular_destination"
         tools:layout="@layout/activity_popular_destination" />
+    <activity
+        android:id="@+id/tripDetails"
+        android:name="com.example.travelmate.TripDetails"
+        android:label="TripDetails" />
+
+    <fragment
+        android:id="@+id/startTripFragment"
+        android:name="com.example.travelmate.StartTripFragment"
+        android:label="fragment_start_trip"
+        tools:layout="@layout/fragment_start_trip" />
 </navigation>

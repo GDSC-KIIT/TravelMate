@@ -11,22 +11,93 @@
         android:label="fragment_home_main_fragment"
         tools:layout="@layout/fragment_home_main_fragment" >
         <action
-            android:id="@+id/action_home_main_fragment_to_popular_destination"
-            app:destination="@id/popular_destination" />
+            android:id="@+id/action_home_main_fragment_to_popularDestinationFragment"
+            app:destination="@id/popularDestinationFragment" />
+        <action
+            android:id="@+id/action_home_main_fragment_to_startTripFragment"
+            app:destination="@id/startTripFragment" />
     </fragment>
-    <activity
-        android:id="@+id/popular_destination"
-        android:name="com.example.travelmate.popular_destination"
-        android:label="activity_popular_destination"
-        tools:layout="@layout/activity_popular_destination" />
-    <activity
-        android:id="@+id/tripDetails"
-        android:name="com.example.travelmate.TripDetails"
-        android:label="TripDetails" />
 
     <fragment
         android:id="@+id/startTripFragment"
         android:name="com.example.travelmate.StartTripFragment"
         android:label="fragment_start_trip"
-        tools:layout="@layout/fragment_start_trip" />
+        tools:layout="@layout/fragment_start_trip" >
+        <action
+            android:id="@+id/action_startTripFragment_to_selectDateFragment"
+            app:destination="@id/selectDateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectDateFragment"
+        android:name="com.example.travelmate.SelectDateFragment"
+        android:label="fragment_select_date"
+        tools:layout="@layout/fragment_select_date" >
+        <action
+            android:id="@+id/action_selectDateFragment_to_customizeTripFragment"
+            app:destination="@id/customizeTripFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customizeTripFragment"
+        android:name="com.example.travelmate.CustomizeTripFragment"
+        android:label="fragment_customize_trip"
+        tools:layout="@layout/fragment_customize_trip" >
+        <action
+            android:id="@+id/action_customizeTripFragment_to_selectBudgetFragment2"
+            app:destination="@id/selectBudgetFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectBudgetFragment2"
+        android:name="com.example.travelmate.SelectBudgetFragment"
+        android:label="fragment_select_budget"
+        tools:layout="@layout/fragment_select_budget" >
+        <action
+            android:id="@+id/action_selectBudgetFragment2_to_itinerarySummaryFragment"
+            app:destination="@id/itinerarySummaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itinerarySummaryFragment"
+        android:name="com.example.travelmate.ItinerarySummaryFragment"
+        android:label="fragment_itenary_summary"
+        tools:layout="@layout/fragment_itenary_summary" >
+        <action
+            android:id="@+id/action_itinerarySummaryFragment_to_selectBudgetFragment2"
+            app:destination="@id/selectBudgetFragment2" />
+        <action
+            android:id="@+id/action_itinerarySummaryFragment_to_customizeTripFragment"
+            app:destination="@id/customizeTripFragment" />
+        <action
+            android:id="@+id/action_itinerarySummaryFragment_to_selectDateFragment"
+            app:destination="@id/selectDateFragment" />
+        <action
+            android:id="@+id/action_itinerarySummaryFragment_to_startTripFragment"
+            app:destination="@id/startTripFragment" />
+        <action
+            android:id="@+id/action_itinerarySummaryFragment_to_my_trip_details"
+            app:destination="@id/my_trip_details" />
+        <action
+            android:id="@+id/action_itinerarySummaryFragment_to_tripDetailsFrag"
+            app:destination="@id/tripDetailsFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularDestinationFragment"
+        android:name="com.example.travelmate.fragments.PopularDestinationFragment"
+        android:label="activity_popular_destination"
+        tools:layout="@layout/activity_popular_destination" >
+        <action
+            android:id="@+id/action_popularDestinationFragment_to_tripDetailsFrag"
+            app:destination="@id/tripDetailsFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripDetailsFrag"
+        android:name="com.example.travelmate.fragments.DestinationDetailsFragment"
+        android:label="TripDetailsFrag" >
+        <action
+            android:id="@+id/action_tripDetailsFrag_to_startTripFragment"
+            app:destination="@id/startTripFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/my_trip_details"
+        android:name="com.example.travelmate.My_trip_details"
+        android:label="fragment_my_trip_details"
+        tools:layout="@layout/fragment_my_trip_details" />
 </navigation>

@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import com.example.recyclerview.com.example.travelmate.ActiveTrips_data
 
 class ActiveTripsFragment : Fragment() {
     private lateinit var newARecyclerview: RecyclerView

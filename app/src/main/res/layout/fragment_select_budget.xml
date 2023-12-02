@@ -211,6 +211,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContToSummary"
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:layout_marginBottom="16dp"

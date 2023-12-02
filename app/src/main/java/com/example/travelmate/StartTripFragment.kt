@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatButton
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,6 +26,8 @@ class StartTripFragment : Fragment() {
     private var param2: String? = null
 
     private lateinit var btnOnlyMe : ConstraintLayout
+    private lateinit var navController : NavController
+    private lateinit var btnToDate : AppCompatButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,11 +35,19 @@ class StartTripFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
 
-            btnOnlyMe = view?.findViewById(R.id.btnOnlyMe)!!
+        }
+    }
 
-            btnOnlyMe.setOnClickListener {
-                btnOnlyMe.setBackgroundResource(R.drawable.rect_selected_btn)
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        navController = findNavController()
+        btnOnlyMe = view.findViewById(R.id.btnOnlyMe)
+        btnToDate = view.findViewById(R.id.btnContToDate)
+
+
+        btnToDate.setOnClickListener {
+            navController.navigate(R.id.action_startTripFragment_to_selectDateFragment)
         }
     }
 

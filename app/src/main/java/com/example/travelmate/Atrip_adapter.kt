@@ -5,10 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerViewAccessibilityDelegate
-import com.example.recyclerview.com.example.travelmate.ActiveTrips_data
 
 class Atrip_adapter(private val activeTripList:ArrayList<ActiveTrips_data>):RecyclerView.Adapter<Atrip_adapter.MyViewHolder>()
 {

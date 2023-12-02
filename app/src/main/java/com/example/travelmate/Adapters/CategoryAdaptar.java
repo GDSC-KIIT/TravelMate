@@ -20,7 +20,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.travelmate.MainActivity;
 import com.example.travelmate.R;
-import com.example.travelmate.details_activity;
 import com.example.travelmate.models.CategoryDomain;
 
 import java.util.List;
@@ -106,21 +105,21 @@ public class CategoryAdaptar extends RecyclerView.Adapter<CategoryAdaptar.ViewHo
             mainLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    int position = getAdapterPosition();
-                    switch (position) {
-                        case 0:
-                            // Handle click for case 0
-                            // Launch a new activity
-                            Context context3 = view.getContext();
-                            Intent intent3 = new Intent(context3, details_activity.class);
-                            context3.startActivity(intent3);
-                            break;
-                        case 1:
-                        case 2:
-                        case 3:
-                            // Handle click for cases 1, 2, and 3 (add your logic here)
-                            break;
-                    }
+//                    int position = getAdapterPosition();
+//                    switch (position) {
+//                        case 0:
+//                            // Handle click for case 0
+//                            // Launch a new activity
+//                            Context context3 = view.getContext();
+//                            Intent intent3 = new Intent(context3, details_activity.class);
+//                            context3.startActivity(intent3);
+//                            break;
+//                        case 1:
+//                        case 2:
+//                        case 3:
+//                            // Handle click for cases 1, 2, and 3 (add your logic here)
+//                            break;
+//                    }
                 }
             });
         }

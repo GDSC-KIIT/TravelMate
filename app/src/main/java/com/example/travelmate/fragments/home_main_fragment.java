@@ -62,16 +62,16 @@ public class home_main_fragment extends Fragment {
         view.findViewById(R.id.tvViewAllPopularDestination).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_home_main_fragment_to_popular_destination);
+                navController.navigate(R.id.action_home_main_fragment_to_popularDestinationFragment);
             }
         });
 
-//        view.findViewById(R.id.tvViewAllArticles).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                navController.navigate(R.id.);  // add id after making popular articles fragment
-//            }
-//        });
+        view.findViewById(R.id.tvViewAllArticles).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_home_main_fragment_to_startTripFragment);  // add id after making popular articles fragment
+            }
+        });
 
     }
 

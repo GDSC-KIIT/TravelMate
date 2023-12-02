@@ -400,11 +400,6 @@
             android:textAllCaps="false"
             android:layout_alignParentBottom="true"
             android:textColor="@color/white" />
-
-
-
-
-
     </RelativeLayout>
     </ScrollView>
 

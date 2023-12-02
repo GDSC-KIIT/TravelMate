@@ -390,18 +390,37 @@
                 android:layout_height="30sp"/>
         </LinearLayout>
 
+    </RelativeLayout>
+
+
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        >
+
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
+            android:id="@+id/btnStartTrip"
+            android:layout_width="380dp"
             android:layout_height="60dp"
-            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
             android:background="@drawable/rect_round"
             android:fontFamily="@font/poppins_medium"
-            android:text="@string/Continue"
+            android:text="@string/start_a_trip"
             android:textAllCaps="false"
-            android:layout_alignParentBottom="true"
-            android:textColor="@color/white" />
-    </RelativeLayout>
-    </ScrollView>
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </RelativeLayout>

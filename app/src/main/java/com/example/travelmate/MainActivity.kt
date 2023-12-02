@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login)
+        setContentView(R.layout.fragment_login)
 
         btnGoogle = findViewById(R.id.googleSignInButton)
         oneTapClient = Identity.getSignInClient(this)
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                     .build())
             .build();
 
-    
+
 
         btnGoogle.setOnClickListener( View.OnClickListener() {
             oneTapClient.beginSignIn(signUpRequest)
@@ -107,7 +107,7 @@ class LoginActivity : Activity(), OnClickListener {
     private var saveLogin: Boolean? = null
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login)
+        setContentView(R.layout.fragment_login)
         ok = findViewById<View>(R.id.buttonLogin) as Button
         ok!!.setOnClickListener(this)
         editTextUsername = findViewById<View>(R.id.editTextUsername) as EditText

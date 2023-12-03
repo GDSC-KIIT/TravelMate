@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatButton
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,7 +23,8 @@ class ForgotpwdFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-
+    private lateinit var btnReset : AppCompatButton
+    private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -37,6 +41,15 @@ class ForgotpwdFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_forgotpwd, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        navController = findNavController()
+        btnReset = view.findViewById(R.id.resetButton)
+
+        btnReset.setOnClickListener {
+            navController.navigate(R.id.action_forgotpwdFragment_to_resetpwdFragment)
+        }
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of

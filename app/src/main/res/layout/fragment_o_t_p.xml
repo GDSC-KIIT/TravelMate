@@ -39,28 +39,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.21"/>
 
-    <com.chaos.view.PinView
-        style="@style/PinWidget.PinView"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:elevation="10dp"
-        android:inputType="number"
-        android:textColor="@color/black"
-        app:itemHeight="60dp"
-        app:itemWidth="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388"
-        android:itemBackground="@drawable/otpveri"
-        android:textSize="20dp"
-        app:itemRadius="10dp"
-        app:itemSpacing="10dp"
-        app:lineColor="@color/black"
-        >
+<!--    <com.chaos.view.PinView-->
+<!--        style="@style/PinWidget.PinView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:elevation="10dp"-->
+<!--        android:inputType="number"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:itemHeight="60dp"-->
+<!--        app:itemWidth="80dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.388"-->
+<!--        android:itemBackground="@drawable/otpveri"-->
+<!--        android:textSize="20dp"-->
+<!--        app:itemRadius="10dp"-->
+<!--        app:itemSpacing="10dp"-->
+<!--        app:lineColor="@color/black"-->
+<!--        >-->
 
-    </com.chaos.view.PinView>
+<!--    </com.chaos.view.PinView>-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -92,6 +92,7 @@
         app:layout_constraintVertical_bias="0.759" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVerify"
         android:layout_width="350sp"
         android:layout_height="40dp"
         android:background="@drawable/custom_button"

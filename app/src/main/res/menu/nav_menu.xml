@@ -11,11 +11,11 @@
     <item
         android:id="@+id/mytrips"
         android:icon="@drawable/baseline_location_on_24"
-        android:title="My Trips"/>
+        android:title="@string/my_trips"/>
     />
     <item
         android:id="@+id/settings"
         android:icon="@drawable/outline_settings_24"
-        android:title="Settings"/>
+        android:title="@string/settings"/>
     />
 </menu>

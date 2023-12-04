@@ -7,6 +7,7 @@
     android:background="@color/white">
 
     <TextView
+
         android:id="@+id/textView27"
         android:layout_width="74dp"
         android:layout_height="40dp"

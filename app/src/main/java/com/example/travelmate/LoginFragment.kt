@@ -54,10 +54,10 @@ class LoginFragment : Fragment() {
         tvForgot = view.findViewById(R.id.forget_btn)
 
         btnLogin.setOnClickListener {
-            navController.navigate(R.id.action_loginFragment_to_home_main_fragment)
+            navController.navigate(R.id.action_loginFragment2_to_fragment_home_main_fragment)
         }
         tvForgot.setOnClickListener {
-            navController.navigate(R.id.action_loginFragment_to_forgotpwdFragment)
+            navController.navigate(R.id.action_loginFragment2_to_forgotpwdFragment2)
         }
 
     }

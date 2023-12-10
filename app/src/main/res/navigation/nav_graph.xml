@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/firstFragment">
+    app:startDestination="@id/home_main_fragment">
 
     <fragment
         android:id="@+id/home_main_fragment"
@@ -90,7 +90,8 @@
     <fragment
         android:id="@+id/tripDetailsFrag"
         android:name="com.example.travelmate.fragments.DestinationDetailsFragment"
-        android:label="TripDetailsFrag" >
+        android:label="TripDetailsFrag"
+        tools:layout="@layout/activity_trip_details">
         <action
             android:id="@+id/action_tripDetailsFrag_to_startTripFragment"
             app:destination="@id/startTripFragment" />
@@ -100,58 +101,4 @@
         android:name="com.example.travelmate.My_trip_details"
         android:label="fragment_my_trip_details"
         tools:layout="@layout/fragment_my_trip_details" />
-    <fragment
-        android:id="@+id/firstFragment"
-        android:name="com.example.travelmate.FirstFragment"
-        android:label="FirstFragment" >
-        <action
-            android:id="@+id/action_firstFragment_to_signUpFragment"
-            app:destination="@id/signUpFragment" />
-        <action
-            android:id="@+id/action_firstFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.travelmate.LoginFragment"
-        android:label="LoginFragment" >
-        <action
-            android:id="@+id/action_loginFragment_to_forgotpwdFragment"
-            app:destination="@id/forgotpwdFragment" />
-        <action
-            android:id="@+id/action_loginFragment_to_home_main_fragment"
-            app:destination="@id/home_main_fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/signUpFragment"
-        android:name="com.example.travelmate.SignUpFragment"
-        android:label="SignUpFragment" >
-        <action
-            android:id="@+id/action_signUpFragment_to_OTPFragment"
-            app:destination="@id/OTPFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/OTPFragment"
-        android:name="com.example.travelmate.OTPFragment"
-        android:label="OTPFragment" >
-        <action
-            android:id="@+id/action_OTPFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/forgotpwdFragment"
-        android:name="com.example.travelmate.ForgotpwdFragment"
-        android:label="ForgotpwdFragment" >
-        <action
-            android:id="@+id/action_forgotpwdFragment_to_resetpwdFragment"
-            app:destination="@id/resetpwdFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/resetpwdFragment"
-        android:name="com.example.travelmate.ResetpwdFragment"
-        android:label="ResetpwdFragment" >
-        <action
-            android:id="@+id/action_resetpwdFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
 </navigation>

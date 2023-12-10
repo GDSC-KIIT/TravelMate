@@ -51,10 +51,10 @@ class FirstFragment : Fragment() {
         btnSignUp = view.findViewById(R.id.btnSignup)
 
         btnLogin.setOnClickListener {
-            navController.navigate(R.id.action_firstFragment_to_loginFragment)
+            navController.navigate(R.id.action_firstFragment2_to_loginFragment2)
         }
         btnSignUp.setOnClickListener {
-            navController.navigate(R.id.action_firstFragment_to_signUpFragment)
+            navController.navigate(R.id.action_firstFragment2_to_signUpFragment2)
         }
     }
 

@@ -150,7 +150,7 @@
         android:id="@+id/date3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="36dp"
         android:background="@drawable/round_corner_button"
         android:elevation="6sp"
         android:fontFamily="@font/poppins_light"
@@ -158,6 +158,6 @@
         android:text="Date 3"
         android:textColor="@color/card"
         app:layout_constraintStart_toEndOf="@+id/date2"
-        tools:layout_editor_absoluteY="432dp" />
+        tools:layout_editor_absoluteY="467dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

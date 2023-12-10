@@ -50,7 +50,7 @@ class SignUpFragment : Fragment() {
         btnSignUp = view.findViewById(R.id.buttonLogin)
 
         btnSignUp.setOnClickListener {
-            navController.navigate(R.id.action_signUpFragment_to_OTPFragment)
+            navController.navigate(R.id.action_signUpFragment2_to_OTPFragment2)
         }
     }
 

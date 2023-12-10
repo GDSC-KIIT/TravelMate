@@ -49,7 +49,7 @@ class ResetpwdFragment : Fragment() {
         btnContinue = view.findViewById(R.id.resetButton)
 
         btnContinue.setOnClickListener {
-            navController.navigate(R.id.action_resetpwdFragment_to_loginFragment)
+            navController.navigate(R.id.action_resetpwdFragment2_to_loginFragment22)
         }
     }
     companion object {

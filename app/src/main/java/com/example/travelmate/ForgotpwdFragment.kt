@@ -47,7 +47,7 @@ class ForgotpwdFragment : Fragment() {
         btnReset = view.findViewById(R.id.resetButton)
 
         btnReset.setOnClickListener {
-            navController.navigate(R.id.action_forgotpwdFragment_to_resetpwdFragment)
+            navController.navigate(R.id.action_forgotpwdFragment2_to_resetpwdFragment2)
         }
     }
     companion object {

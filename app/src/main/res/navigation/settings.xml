@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings.xml"
+    app:startDestination="@id/settings_main">
+
+    <fragment
+        android:id="@+id/app_appearance"
+        android:name="com.example.travelmate.app_appearance"
+        android:label="app_appearance"
+        tools:layout="@layout/fragment_app_appearance">
+        <action
+            android:id="@+id/action_app_appearance_to_settings_main"
+            app:destination="@id/settings_main" />
+    </fragment>
+    <fragment
+        android:id="@+id/help_and_support"
+        android:name="com.example.travelmate.HelpandSupport"
+        android:label="help_and_support"
+        tools:layout="@layout/fragment_help_and_support">
+        <action
+            android:id="@+id/action_help_and_support_to_faq"
+            app:destination="@id/faq" />
+        <action
+            android:id="@+id/action_help_and_support_to_settings_main"
+            app:destination="@id/settings_main" />
+        <action
+            android:id="@+id/action_help_and_support_to_privacy_policy"
+            app:destination="@id/privacy_policy" />
+        <action
+            android:id="@+id/action_help_and_support_to_terms_and_service"
+            app:destination="@id/terms_and_service" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacy_policy"
+        android:name="com.example.travelmate.privacy_policy"
+        android:label="privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy">
+        <action
+            android:id="@+id/action_privacy_policy_to_help_and_support"
+            app:destination="@id/help_and_support" />
+    </fragment>
+    <fragment
+        android:id="@+id/terms_and_service"
+        android:name="com.example.travelmate.terms_and_service"
+        android:label="terms_and_service"
+        tools:layout="@layout/fragment_terms_and_service">
+        <action
+            android:id="@+id/action_terms_and_service_to_help_and_support"
+            app:destination="@id/help_and_support" />
+    </fragment>
+    <fragment
+        android:id="@+id/faq"
+        android:name="com.example.travelmate.faq"
+        android:label="faq"
+        tools:layout="@layout/fragment_faq">
+        <action
+            android:id="@+id/action_faq_to_help_and_support"
+            app:destination="@id/help_and_support" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings_main"
+        android:name="com.example.travelmate.Settings"
+        android:label="settings_main"
+        tools:layout="@layout/fragment_settings_main">
+        <action
+            android:id="@+id/action_settings_main_to_app_appearance"
+            app:destination="@id/app_appearance" />
+        <action
+            android:id="@+id/action_settings_main_to_help_and_support"
+            app:destination="@id/help_and_support" />
+    </fragment>
+</navigation>
